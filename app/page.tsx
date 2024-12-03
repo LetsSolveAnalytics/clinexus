@@ -8,9 +8,10 @@ import infoCards from './libs/InfoCards';
 import pricingCards from './libs/PricingCards';
 import { CheckCheck, LucideIcon } from 'lucide-react';
 import { ReactElement } from 'react';
+// import * from '../public/AI_doctor.png'
 
 export default function Home() {
-  const [mousePosition, setMousePosition] = useState({ x: '50%', y: '50%' });
+  const [mousePosition, setMousePosition] = useState({ x: '100%', y: '100%' });
 
   useEffect(() => {
     function handleMouseMove(event: { clientX: any; clientY: any; }) {
@@ -33,15 +34,15 @@ export default function Home() {
       <main className='flex flex-col items-center justify-center'>
         <header id="home" className="flex flex-col-reverse md:flex-row w-full h-screen max-w-7xl items-center justify-center p-8 relative overflow-x-hidden"
           style={{
-            background: `radial-gradient(400px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
+            background: `radial-gradient(200px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
           }}
         >
           <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
             <div className='flex flex-col gap-2'>
-              <h1 className='text-4xl text-white font-black md:text-8xl'>Rumo</h1>
-              <h2 className='text-md text-white md:text-2xl'>Start growing today!</h2>
+              <h1 className='text-4xl text-white font-black md:text-8xl'>DocEase</h1>
+              <h2 className='text-md text-white md:text-2xl'>Ease Up the Doctor's Life! </h2>
             </div>
-            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>Rumo is an AI-powered sales optimization tool that provides data-driven insights to boost sales performance.</p>
+            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>An AI-powered doctor assistant leveraging advanced data-driven insights to optimize patient checkups and drastically cut down on waiting times, ensuring efficient and timely healthcare.</p>
             <div className='w-full flex items-center justify-center md:justify-start gap-4'>
               <button className='w-48 h-12 text-sm border-white-rounded-lg sm:text-base rounded bg-black text-white hover:bg-fuchsia-700 hover:text-white transition-colors rounded-full border '>Try 7 days free!</button>
               <button className='w-48 h-12 text-sm text-white sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors'>Contact</button>
@@ -50,6 +51,7 @@ export default function Home() {
 
           <div className='w-full h-2/4 md:h-full md:w-3/5 flex items-center justify-center relative -z-10'>
             <Spline className="bg-black" scene='https://prod.spline.design/8glM91b9bsfBLBim/scene.splinecode' />
+              {/* <img  src="/AI_doctor.png" alt="Description of SVG"></img> */}
           </div>
         </header>
 
@@ -159,7 +161,8 @@ function Navbar() {
   return (
     <div className='w-full text-white h-16 backdrop-filter backdrop-blur-xl bg-opacity-20 border-b flex items-center justify-center'>
       <div className='max-w-7xl w-full flex items-center justify-between p-4'>
-        <h6 className='font-bold'>Rumo</h6>
+        <h6 className='font-bold'>DocEase</h6>
+        
         <ul className='flex gap-8'>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
@@ -179,7 +182,7 @@ function Footer() {
           <div className="grid md:grid-cols-3 py-5">
             <div className="py-8 px-4">
               <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-                Rumo
+                DocEase
               </h1>
               <p className="text-gray-400 text-left">
                 Subscribe to our{" "}
@@ -236,7 +239,7 @@ function Footer() {
           </div>
         </section>
       </div>
-      <p>&copy; 2024 Rumo. All rights reserved.</p>
+      <p>&copy; 2024 DocEase. All rights reserved.</p>
     </footer>
   );
 }

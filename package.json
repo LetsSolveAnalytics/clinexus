@@ -1,5 +1,5 @@
 {
-  "name": "Rumo",
+  "name": "DocEase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,12 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.5.5",
+    "DocEase": "file:",
     "install": "^0.13.0",
     "lucide-react": "^0.290.0",
     "next": "^14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "Rumo": "file:"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

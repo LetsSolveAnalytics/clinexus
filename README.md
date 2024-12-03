@@ -2,7 +2,7 @@
 
 Rumo is an AI-powered sales optimization tool that provides data-driven insights to boost sales performance. This project showcases Rumo's features and pricing.
 
-## 1. EHFDEHDFHEDETDJJDSGEDGXJTable of Contents
+## Table of Contents
 
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
