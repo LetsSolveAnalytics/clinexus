@@ -39,7 +39,7 @@ export default function Home() {
         >
           <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
             <div className='flex flex-col gap-2'>
-              <h1 className='text-4xl text-white font-black md:text-8xl'>DocEase</h1>
+              <h1 className='text-4xl text-white font-black md:text-8xl'>Clinexus</h1>
               <h2 className='text-md text-white md:text-2xl'>Ease Up the Doctor's Life! </h2>
             </div>
             <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>An AI-powered doctor assistant leveraging advanced data-driven insights to optimize patient checkups and drastically cut down on waiting times, ensuring efficient and timely healthcare.</p>
@@ -161,7 +161,7 @@ function Navbar() {
   return (
     <div className='w-full text-white h-16 backdrop-filter backdrop-blur-xl bg-opacity-20 border-b flex items-center justify-center'>
       <div className='max-w-7xl w-full flex items-center justify-between p-4'>
-        <h6 className='font-bold'>DocEase</h6>
+        <h6 className='font-bold'>Clinexus</h6>
         
         <ul className='flex gap-8'>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
@@ -182,7 +182,7 @@ function Footer() {
           <div className="grid md:grid-cols-3 py-5">
             <div className="py-8 px-4">
               <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-                DocEase
+                Clinexus
               </h1>
               <p className="text-gray-400 text-left">
                 Subscribe to our{" "}
@@ -239,7 +239,7 @@ function Footer() {
           </div>
         </section>
       </div>
-      <p>&copy; 2024 DocEase. All rights reserved.</p>
+      <p>&copy; 2024 Clinexus. All rights reserved.</p>
     </footer>
   );
 }
