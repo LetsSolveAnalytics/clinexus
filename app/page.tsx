@@ -40,7 +40,7 @@ export default function Home() {
           <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
             <div className='flex flex-col gap-2'>
               <h1 className='text-4xl text-white font-black md:text-8xl'>Clinexus</h1>
-              <h2 className='text-md text-white md:text-2xl'>Ease Up the Doctor's Life! </h2>
+              <h2 className='text-md text-white md:text-2xl'>The nexus of equitable care and amplified access</h2>
             </div>
             <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>An AI-powered doctor assistant leveraging advanced data-driven insights to optimize patient checkups and drastically cut down on waiting times, ensuring efficient and timely healthcare.</p>
             <div className='w-full flex items-center justify-center md:justify-start gap-4'>
