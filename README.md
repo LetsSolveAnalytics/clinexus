@@ -29,7 +29,7 @@ git clone https://github.com/your-username/rumo.git
 2. Navigate to the project directory:
 
 ```bash
-cd rumo
+cd clinexus
 ```
 
 3. Install dependencies:
