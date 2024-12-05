@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contactus" className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
+{/*         <section id="contactus" className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
           style={{
             background: `radial-gradient(400px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
           }}
@@ -90,7 +90,29 @@ export default function Home() {
           </div>       
           <div className='grid  text-white grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-8'>
           </div>
-        </section>
+        </section> */}
+        <section
+            id="contactus"
+            className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
+            style={{
+              background: `radial-gradient(400px circle at ${mousePosition?.x || "50%"} ${mousePosition?.y || "50%"}, rgba(255, 255, 255, 0.6), transparent 40%)`,
+            }}
+          >
+            <h4 className="text-4xl text-white md:text-5xl font-bold">Contact us</h4>
+            <div className="w-400 h-80 rounded flex flex-col justify-around items-center p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20">
+              {/* Ensure correct path and dimensions */}
+              <Image
+                src="/fuzel.jpg"
+                width={200}
+                height={200}
+                className="object-cover rounded-full"
+                alt="Fuzel image"
+              />
+              <h4 className="text-xl text-white md:text-xl font-bold">Gmail: fuzelahamed1999@gmail.com</h4>
+            </div>
+            <div className="grid text-white grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-8"></div>
+          </section>
+
       </main>
       <Footer />
     </div>
