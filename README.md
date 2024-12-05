@@ -1,6 +1,6 @@
-# Rumo
+# Clinexus
 
-Rumo is an AI-powered sales optimization tool that provides data-driven insights to boost sales performance. This project showcases Rumo's features and pricing.
+Clinexus is an AI-powered Doctor's documentation optimization tool that provides data-driven insights to boost consultation times and doctor's performance. This project showcases Clinexus features and pricing.
 
 ## Table of Contents
 
@@ -46,9 +46,9 @@ npm start
 
 ## Usage
 
-Visit the [live demo](https://rumo.vercel.app/) to explore Rumo's features, including:
+Visit the [live demo](https://rumo.vercel.app/) to explore Clinxus's features, including:
 
-- Homepage showcasing Rumo's capabilities.
+- Homepage showcasing Clinexus's capabilities.
 - About section providing information about the project.
 - Pricing section detailing subscription plans and benefits.
 
