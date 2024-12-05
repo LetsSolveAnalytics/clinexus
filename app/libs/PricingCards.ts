@@ -1,5 +1,5 @@
 interface IPricingCard {
-    price:number;
+    // price:number;
     title:string;
     benefits:string[];
     id:number;
@@ -8,29 +8,25 @@ interface IPricingCard {
 
 const pricingCards:IPricingCard[] = [
     {
-        price: 49,
-        title: "Rumo Pro",
+        title: "Lets Solve Analytics",
         benefits: [
-            "Predictive lead scoring",
-            "Automated content creation",
-            "Personalized messaging at scale",
-            "Customer retention tools",
+          ""  
         ],
         id: 1,
-        oneliner: "AI-powered sales tools for focused revenue growth"
+        oneliner: "We bring ideas into reality with our team of experts in IT consulting"
     },
-    {
-        price: 99,
-        title: "Rumo Enterprise",
-        benefits: [
-            "Everything In Pro Tier, and:",
-            "Data-driven recommendations",
-            "Customizable sales workflows",
-            "Real-time alerts and notifications",
-        ],
-        id: 2,
-        oneliner: "Comprehensive sales optimization for accelerated revenue gains"
-    },
+    // {
+    //     price: 99,
+    //     title: "Rumo Enterprise",
+    //     benefits: [
+    //         "Everything In Pro Tier, and:",
+    //         "Data-driven recommendations",
+    //         "Customizable sales workflows",
+    //         "Real-time alerts and notifications",
+    //     ],
+    //     id: 2,
+    //     oneliner: "Comprehensive sales optimization for accelerated revenue gains"
+    // },
 ]
 
 export default pricingCards

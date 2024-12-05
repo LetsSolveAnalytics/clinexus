@@ -614,8 +614,18 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
+}
+.bg-opacity-40{
+  --tw-bg-opacity: 0.4;
+}
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
 }
 .bg-clip-padding{
   background-clip: padding-box;
@@ -898,6 +908,10 @@ body {
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

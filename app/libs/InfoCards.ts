@@ -10,20 +10,20 @@ interface IInfoCard {
 
 const infoCards: IInfoCard[] = [
     {
-        title: "Increased Sales",
-        bodyText: " Rumo's predictive analytics identify high-value prospects for targeted pitches, boosting conversion rates and sales by up to 20%.",
+        title: "Increasing Medical accessibility",
+        bodyText: "Clinexus aids in reducing administrative burdens, it empowers healthcare providers to focus on delivering quality care and make it more accessible.",
         icon: ArrowUpNarrowWide,
         id: 1
     },
     {
         title: "No Time Wasted",
-        bodyText: "Rumo automates personalized content creation, freeing up sales reps' time for revenue-focused activities and increased productivity.",
+        bodyText: "Clinexus eliminates delays by leveraging AI optimization to complete documentation in minutes, maximizing efficiency for healthcare providers.",
         icon: AlarmClockOff,
         id: 2
     },
     {
-        title: "Decreased Churn",
-        bodyText: " Rumo's AI lead engagement and renewal tools reduce customer churn by up to 30% through consistent outreach and retention opportunities.",
+        title: "Decreased burn-out in medical experts",
+        bodyText: "Clinexus boosts happiness in medical experts by removing mundane tasks, letting them focus on meaningful patient care.",
         icon: ArrowDownNarrowWide,
         id: 3
     },

@@ -5,10 +5,10 @@ import Spline from '@splinetool/react-spline';
 import Image from 'next/image';
 import Link from 'next/link';
 import infoCards from './libs/InfoCards';
-import pricingCards from './libs/PricingCards';
+// import pricingCards from './libs/PricingCards';
 import { CheckCheck, LucideIcon } from 'lucide-react';
 import { ReactElement } from 'react';
-// import * from '../public/AI_doctor.png'
+
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: '100%', y: '100%' });
@@ -40,18 +40,18 @@ export default function Home() {
           <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
             <div className='flex flex-col gap-2'>
               <h1 className='text-4xl text-white font-black md:text-8xl'>Clinexus</h1>
-              <h2 className='text-md text-white md:text-2xl'>The nexus of equitable care and amplified access</h2>
+              <h2 className='text-md text-white md:text-2xl'>The nexus of amplified access and equitable care.</h2>
             </div>
-            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>An AI-powered doctor assistant leveraging advanced data-driven insights to optimize patient checkups and drastically cut down on waiting times, ensuring efficient and timely healthcare.</p>
+            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>A unified solution to streamline tedious documentation and repetitive workload with data-driven optimization</p>
             <div className='w-full flex items-center justify-center md:justify-start gap-4'>
-              <button className='w-48 h-12 text-sm border-white-rounded-lg sm:text-base rounded bg-black text-white hover:bg-fuchsia-700 hover:text-white transition-colors rounded-full border '>Try 7 days free!</button>
-              <button className='w-48 h-12 text-sm text-white sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors'>Contact</button>
+            <Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#contactus">
+              <button className='w-48 h-12 text-sm border-white-rounded-lg sm:text-base rounded bg-black text-white hover:bg-fuchsia-700 hover:text-white transition-colors rounded-full border '>Contact us</button> 
+            </Link>
             </div>
           </div>
 
           <div className='w-full h-2/4 md:h-full md:w-3/5 flex items-center justify-center relative -z-10'>
             <Spline className="bg-black" scene='https://prod.spline.design/8glM91b9bsfBLBim/scene.splinecode' />
-              {/* <img  src="/AI_doctor.png" alt="Description of SVG"></img> */}
           </div>
         </header>
 
@@ -77,18 +77,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="pricing" className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
+        <section id="contactus" className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
           style={{
             background: `radial-gradient(400px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
           }}
         >
-          <h4 className="text-4xl text-white md:text-5xl font-bold">Pricing</h4>
+          <h4 className="text-4xl text-white md:text-5xl font-bold">Contact us</h4>
+          <div className='w-400 h-80 rounded flex flex-col justify-around items-center p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20'>
+
+          <Image src="/fuzel.jpg" width={200} height={200} className=" object-cover overflow-visible" alt="Fuzel image" />
+          <h4 className="text-xl text-white md:text-xl font-bold">Gmail: fuzelahamed1999@gmail.com</h4>
+          </div>       
           <div className='grid  text-white grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-8'>
-            {pricingCards.map((pricingCard) => {
-              return (
-                <PricingCard oneliner={pricingCard.oneliner} title={pricingCard.title} price={pricingCard.price} benefits={pricingCard.benefits} key={pricingCard.id} />
-              )
-            })}
           </div>
         </section>
       </main>
@@ -119,43 +119,9 @@ function InfoCard({ title, Icon, children }: IInfoCardProps) {
 
 interface IPricingCardProps {
   title: string;
-  price: number;
   benefits: string[]
   oneliner: string;
 }
-function PricingCard({ title, price, benefits, oneliner }: IPricingCardProps) {
-  return (
-    <div className='h-fit w-full rounded flex flex-col p-8 gap-8 bg-gray-900 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 relative'>
-      <div className='flex flex-col gap-2'>
-        <div>
-          <h6 className='text-2xl'>{title}</h6>
-          <p className='text-sm text-zinc-500'>{oneliner}</p>
-        </div>
-        <p className='text-4xl font-bold'>
-          ${price} <span className='text-sm font-normal text-zinc-500'>/ Month</span>
-        </p>
-      </div>
-      <button className='bg-fuchsia-700 rounded p-2 text-sm transition-colors hover:bg-fuchsia-800'>Try 7 days free!</button>
-      <div className='flex flex-col w-full gap-4'>
-        {benefits.map((benefit, i) => (
-          <p key={i} className='text-sm text-zinc-500 flex items-center gap-2'>
-            <span>
-              {/* Assuming CheckCheck is an icon component */}
-              <CheckCheck />
-            </span>
-            {benefit}
-          </p>
-        ))}
-      </div>
-      <div className="absolute inset-0 rounded overflow-hidden">
-        <div className="border-2 border-fuchsia-700 hover:border-white rounded-full absolute" style={{
-          animation: 'rotate 2s linear infinite'
-        }}></div>
-      </div>
-    </div>
-  );
-}
-
 
 function Navbar() {
   return (
@@ -166,8 +132,7 @@ function Navbar() {
         <ul className='flex gap-8'>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#pricing">Pricing</Link></li>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#pricing">Contact Us</Link></li>
+          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#contactus">Contact Us</Link></li>
         </ul>
       </div>
     </div>

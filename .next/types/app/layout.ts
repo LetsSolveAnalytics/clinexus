@@ -1,4 +1,4 @@
-// File: C:\NextJS\TEST\DocEase\app\layout.tsx
+// File: C:\NextJS\DocEase_LSA\docease\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
