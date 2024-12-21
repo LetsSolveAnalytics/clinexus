@@ -40,9 +40,9 @@ export default function Home() {
           <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
             <div className='flex flex-col gap-2'>
               <h1 className='text-4xl text-white font-black md:text-8xl'>Clinexus</h1>
-              <h2 className='text-md text-white md:text-2xl'>The nexus of amplified access and equitable care.</h2>
+              <h2 className='text-md text-white md:text-2xl'>The Nexus of Empowered Practice and Streamlined Care for Practitioners.</h2>
             </div>
-            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>A unified solution to streamline tedious documentation and repetitive workload with data-driven optimization</p>
+            <p className='max-w-md text-white text-sm md:text-base text-zinc-500'>A unified solution to streamline documentation and workload for medical practitioners</p>
             <div className='w-full flex items-center justify-center md:justify-start gap-4'>
             <Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#contactus">
               <button className='w-48 h-12 text-sm border-white-rounded-lg sm:text-base rounded bg-black text-white hover:bg-fuchsia-700 hover:text-white transition-colors rounded-full border '>Contact us</button> 
@@ -64,7 +64,7 @@ export default function Home() {
             <Image src="/whirl.svg" fill className="absolute object-cover w-full overflow-visible sm:rotate-90" alt="Background Whirl" />
           </div>
           <div className="w-full h-full flex items-center justify-center flex-col gap-8 max-w-7xl">
-            <h3 className='text-4xl  text-white md:text-5xl font-bold'>No More Time Wasted!</h3>
+            <h3 className='text-4xl  text-white md:text-5xl font-bold'>What we offer!</h3>
             <div className="w-full  text-white grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-between relative">
               {infoCards.map((infoCard) => {
                 return (
