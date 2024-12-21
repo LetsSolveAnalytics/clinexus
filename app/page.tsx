@@ -55,7 +55,55 @@ export default function Home() {
           </div>
         </header>
 
-        <section id="about" className="h-fit min-h-screen w-full flex relative items-center justify-center p-8"
+        <section
+          id="about"
+          className="h-fit min-h-screen w-full flex relative items-center justify-center p-8"
+          style={{
+            background: `radial-gradient(400px circle at ${mousePosition?.x || "50%"} ${mousePosition?.y || "50%"}, rgba(255, 255, 255, 0.6), transparent 40%)`
+          }}
+        >
+          {/* Background Decoration */}
+          <div className="absolute -z-10 h-full w-full overflow-hidden">
+            <Image
+              src="/whirl.svg"
+              fill
+              className="absolute object-cover w-full overflow-visible sm:rotate-90"
+              alt="Background Whirl"
+            />
+          </div>
+
+          {/* Content and Diagram Container */}
+          <div className="w-full h-full max-w-7xl flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
+            {/* Left Content */}
+            <div className="w-full lg:w-1/2 text-white bg-opacity-20 bg-clip-padding backdrop-blur-xl backdrop-filter rounded-lg p-6 shadow-lg">
+            <h3 className="text-4xl md:text-5xl font-bold mb-4">Who Are We?</h3>
+              <p className="text-sm sm:text-base mb-4">
+                Clinexus is a unified solution designed to streamline documentation and reduce the workload for medical practitioners.
+                By integrating advanced AI-driven tools, we aim to make healthcare in Finland more accessible, efficient, and user-friendly.
+                Our platform helps medical professionals save time, reduce errors, and focus on patient care.
+              </p>
+              <p className="text-sm sm:text-base">
+                Our mission is to bridge the gap between technology and healthcare, empowering doctors and nurses with tools that are
+                intuitive, reliable, and impactful.
+              </p>
+            </div>
+
+            {/* Right Solution Diagram */}
+            <div className="w-full lg:w-1/2 flex justify-center items-center">
+              <Image
+                src="/solution.png" // Replace with your actual solution diagram path
+                alt="Solution Diagram"
+                width={800} // Adjust width as needed
+                height={400} // Adjust height as needed
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="ourvalue" className="h-fit min-h-screen w-full flex relative items-center justify-center p-8"
           style={{
             background: `radial-gradient(400px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
           }}
@@ -77,6 +125,7 @@ export default function Home() {
           </div>
         </section>
 
+
 {/*         <section id="contactus" className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
           style={{
             background: `radial-gradient(400px circle at ${mousePosition.x} ${mousePosition.y}, rgba(255, 255, 255, 0.6), transparent 40%)`
@@ -91,27 +140,89 @@ export default function Home() {
           <div className='grid  text-white grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-8'>
           </div>
         </section> */}
-        <section
-            id="contactus"
+
+          <section
+            id="team"
             className="h-fit text-white min-h-screen w-full flex flex-col items-center justify-center gap-8 p-8"
             style={{
               background: `radial-gradient(400px circle at ${mousePosition?.x || "50%"} ${mousePosition?.y || "50%"}, rgba(255, 255, 255, 0.6), transparent 40%)`,
             }}
           >
-            <h4 className="text-4xl text-white md:text-5xl font-bold">Contact us</h4>
-            <div className="w-400 h-80 rounded flex flex-col justify-around items-center p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20">
-              {/* Ensure correct path and dimensions */}
-              <Image
-                src="/fuzel.jpg"
-                width={200}
-                height={200}
-                className="object-cover rounded-full"
-                alt="Fuzel image"
-              />
-              <h4 className="text-xl text-white md:text-xl font-bold">Gmail: fuzelahamed1999@gmail.com</h4>
+            {/* Team Section */}
+            <h4 className="text-3xl text-white font-semibold mt-8">Meet Our Team</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
+              {/* Team Member 1 */}
+              <div className="flex flex-col items-center p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded shadow-md">
+                <Image
+                  src="/fuzel.jpg"
+                  width={120}
+                  height={120}
+                  className="object-cover rounded-full"
+                  alt="Fuzel Shaik"
+                />
+                <h5 className="text-lg font-bold mt-4">Fuzel Shaik</h5>
+                <p className="text-sm">Founder & Data Scientist</p>
+                <p className="text-sm text-center">Doctoral Researcher in NLP</p>
+              </div>
+
+              {/* Team Member 2 */}
+              <div className="flex flex-col items-center p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded shadow-md">
+                <Image
+                  src="/jawad_profile_pic.jpg"
+                  width={120}
+                  height={120}
+                  className="object-cover rounded-full"
+                  alt="Jawad Akhtar Syed"
+                />
+                <h5 className="text-lg font-bold mt-4">Jawad Akhtar Syed</h5>
+                <p className="text-sm">Co-Founder & Automation Engineer</p>
+                <p className="text-sm text-center">Msc in Computer Science</p>
+              </div>
+
+              {/* Team Member 3 */}
+              <div className="flex flex-col items-center p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded shadow-md">
+                <Image
+                  src="/raisul_pic.jpeg"
+                  width={120}
+                  height={120}
+                  className="object-cover rounded-full"
+                  alt="Raisul Islam"
+                />
+                <h5 className="text-lg font-bold mt-4">Raisul Islam</h5>
+                <p className="text-sm">Co-Founder & Technical Lead</p>
+                <p className="text-sm text-center">Msc in Computer Science</p>
+              </div>
+
+              {/* Team Member 4 */}
+              <div className="flex flex-col items-center p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded shadow-md">
+                <Image
+                  src="/vasista_pic.jpeg"
+                  width={120}
+                  height={120}
+                  className="object-cover rounded-full"
+                  alt="Vasista Kodumagulla"
+                />
+                <h5 className="text-lg font-bold mt-4">Vasista Kodumagulla</h5>
+                <p className="text-sm">Co-Founder & Software Developer</p>
+                <p className="text-sm text-center">Msc in Robotics and Data Analytics</p>
+              </div>
+
+              {/* Team Member 5 */}
+              <div className="flex flex-col items-center p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded shadow-md">
+                <Image
+                  src="/gunjan.jpeg"
+                  width={120}
+                  height={120}
+                  className="object-cover rounded-full"
+                  alt="Gunjan Chandra"
+                />
+                <h5 className="text-lg font-bold mt-4">Gunjan Chandra</h5>
+                <p className="text-sm">Advisory Board Member</p>
+                <p className="text-sm text-center">Doctoral Researcher in AI in Healthcare</p>
+              </div>
             </div>
-            <div className="grid text-white grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-8"></div>
           </section>
+
 
       </main>
       <Footer />
@@ -149,12 +260,23 @@ function Navbar() {
   return (
     <div className='w-full text-white h-16 backdrop-filter backdrop-blur-xl bg-opacity-20 border-b flex items-center justify-center'>
       <div className='max-w-7xl w-full flex items-center justify-between p-4'>
-        <h6 className='font-bold'>Clinexus</h6>
+        {/* <h6 className='font-bold'>Clinexus</h6> */}
+
+        <div className='flex items-center'>
+          <img 
+            src="/logo.jpg" 
+            alt="Clinexus Logo" 
+            className="h-10 w-50 rounded" 
+          />
+          {/* <span className='font-bold text-lg ml-2'>Clinexus</span> */}
+        </div>
+
         
         <ul className='flex gap-8'>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#contactus">Contact Us</Link></li>
+          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#ourvalue">Our Value</Link></li>
+          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#team">Meet Us</Link></li>
         </ul>
       </div>
     </div>

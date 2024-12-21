@@ -10,20 +10,20 @@ interface IInfoCard {
 
 const infoCards: IInfoCard[] = [
     {
-        title: "Increasing Medical accessibility",
-        bodyText: "Clinexus aids in reducing administrative burdens, it empowers healthcare providers to focus on delivering quality care and make it more accessible.",
+        title: "Decision Support",
+        bodyText: "One-stop assisted diagnosis system for medical practitioners",
         icon: ArrowUpNarrowWide,
         id: 1
     },
     {
-        title: "No Time Wasted",
-        bodyText: "Clinexus eliminates delays by leveraging AI optimization to complete documentation in minutes, maximizing efficiency for healthcare providers.",
+        title: "Productivity",
+        bodyText: "Facilitate early intervention and preventive measures",
         icon: AlarmClockOff,
         id: 2
     },
     {
-        title: "Decreased burn-out in medical experts",
-        bodyText: "Clinexus boosts happiness in medical experts by removing mundane tasks, letting them focus on meaningful patient care.",
+        title: "Accuracy",
+        bodyText: "Enhance the Diagnostics recommendation",
         icon: ArrowDownNarrowWide,
         id: 3
     },
